@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package nats_schema;
+
+message SimpleMessage {
+    int64 ID = 1;
+    bytes Body = 2;
+}
+
+message MessageInt64 {
+    int64 Int64 = 1;
+}
+
+message MessageInt64Slice {
+    repeated int64 Int64Slice = 1;
+}
+
+message MessageBool {
+    bool Bool = 1;
+}
+
+message MessageBytes {
+    bytes Bytes = 1;
+}
+
+message RequestInt64 {
+    int64 ID = 1;
+    int64 Int64 = 2;
+}
+
+message RequestBytes {
+    int64 ID = 1;
+    bytes Bytes = 2;
+}

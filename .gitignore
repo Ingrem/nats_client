@@ -1,0 +1,7 @@
+*.json
+/.cache
+parameters*.txt
+/venv
+/.idea
+/.cache/v/cache
+*.pyc

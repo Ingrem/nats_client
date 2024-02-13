@@ -1,0 +1,13 @@
+version: '2'
+services:
+  nats_streaming_lib_test:
+    image: nats-streaming:latest
+    entrypoint: "/nats-streaming-server -SDV --port 5544"
+    ports:
+      - 5544:5544
+
+  nats_lib_test:
+    image: nats:latest
+    entrypoint: "/nats-server -DV --port 5644"
+    ports:
+      - 5644:5644

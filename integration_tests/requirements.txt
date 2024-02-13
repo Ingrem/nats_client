@@ -1,0 +1,6 @@
+git+https://oauth2:${GITLAB_TOKEN}@gitaddress.com/qa/libraries/logger.git
+pytest
+asyncio-nats-client
+asyncio-nats-streaming
+pylint
+python-logstash
